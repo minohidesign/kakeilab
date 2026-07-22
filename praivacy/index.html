@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="KAKEI LAB のプライバシーポリシー">
+  <title>プライバシーポリシー | KAKEI LAB</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700&display=swap"
+    rel="stylesheet">
+  <style>
+    :root {
+      --bg: #F4F4F7;
+      --card: #FFFFFF;
+      --text: #20202A;
+      --text-sub: #4A4A56;
+      --text-dim: #8A8A96;
+      --border: #EDEDF2;
+      --accent-from: #787c93;
+      --accent-via: #4FD9C4;
+      --accent-to: #7BD63F;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Noto Sans JP', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.75;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 32px 20px 80px;
+    }
+
+    header {
+      text-align: center;
+      padding: 24px 0 32px;
+    }
+
+    .brand {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-weight: 700;
+      letter-spacing: 3px;
+      font-size: 13px;
+      background: linear-gradient(120deg, var(--accent-from), var(--accent-to));
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      display: inline-block;
+    }
+
+    h1 {
+      font-size: 32px;
+      font-weight: 700;
+      margin: 10px 0 6px;
+      letter-spacing: 0.5px;
+    }
+
+    .updated {
+      font-size: 12px;
+      color: var(--text-dim);
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      letter-spacing: 0.3px;
+    }
+
+    .updated > * {
+      font-size: 12px;
+      color: var(--text-dim);
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      letter-spacing: 0.3px;
+    }
+
+    .intro {
+
+      font-size: 16px;
+      color: var(--text-sub);
+      margin-bottom: 40px;
+      line-height: 1.85;
+    }
+
+    section {
+      background: var(--card);
+      border-radius: 16px;
+      padding: 26px 28px;
+      margin-bottom: 14px;
+    }
+
+    h2 {
+      font-size: 24px;
+      font-weight: 700;
+      margin: 0 0 16px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid var(--border);
+      letter-spacing: 0.3px;
+    }
+
+    h3 {
+      font-size: 20px;
+      font-weight: 700;
+      margin: 24px 0 10px;
+      color: var(--text);
+    }
+
+    h3:first-of-type {
+      margin-top: 4px;
+    }
+
+    p,
+    ul,
+    ol {
+      font-size: 16px;
+      color: var(--text-sub);
+      margin: 8px 0;
+      line-height: 1.85;
+    }
+
+    ul,
+    ol {
+      padding-left: 22px;
+    }
+
+    li {
+      margin: 5px 0;
+    }
+
+    .note {
+      font-size: 14px;
+      color: var(--text-sub);
+      background: var(--bg);
+      padding: 12px 16px;
+      margin: 14px 0;
+      border-radius: 8px;
+      line-height: 1.7;
+    }
+
+    a {
+      color: var(--accent-from);
+      text-decoration: none;
+      border-bottom: 1px solid rgba(var(--accent-from), 0.3);
+      transition: border-color 0.2s;
+      word-break: break-all;
+    }
+
+    a:hover {
+      border-bottom-color: var(--accent-from);
+    }
+
+    .contact-row {
+      display: flex;
+      gap: 10px;
+      align-items: baseline;
+      margin: 6px 0;
+      font-size: 16px;
+    }
+
+    .contact-label {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-weight: 700;
+      color: var(--text);
+      min-width: 78px;
+      font-size: 16px;
+      letter-spacing: 0.3px;
+    }
+
+    .contact-value {
+      color: var(--text-sub);
+    }
+
+    footer {
+      text-align: center;
+      font-size: 12px;
+      color: var(--text-dim);
+      margin-top: 40px;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      letter-spacing: 0.4px;
+    }
+
+    footer .dot {
+      opacity: 0.4;
+      margin: 0 8px;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        padding: 20px 14px 60px;
+      }
+
+      .intro {
+        padding: 18px 20px;
+      }
+
+      section {
+        padding: 22px 20px;
+      }
+
+      h1 {
+        font-size: 22px;
+      }
+
+      h2 {
+        font-size: 16px;
+      }
+
+      h3 {
+        font-size: 14px;
+      }
+
+      p,
+      ul,
+      ol,
+      li {
+        font-size: 16px;
+      }
+
+      .contact-row {
+        flex-direction: column;
+        gap: 2px;
+      }
+
+      .contact-label {
+        min-width: 0;
+      }
+    }
+  </style>
+  <script>
+    const lastUpdate = "2026年7月22日";
+  </script>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <h1>プライバシーポリシー</h1>
+      <div class="updated"><p>最終更新日: <span id="last-update"></span></p>
+      </div>
+    </header>
+
+    <div class="intro">
+      KAKEI LAB (以下「本アプリ」といいます) の運営者 (以下「当方」といいます) は、本アプリの利用者 (以下「ユーザー」といいます)
+      の個人情報およびプライバシーの保護に細心の注意を払っております。本プライバシーポリシー (以下「本ポリシー」といいます) は、本アプリにおける情報の取り扱いについて定めるものです。
+    </div>
+
+    <section>
+      <h2>1. 取得する情報</h2>
+
+      <h3>1-1. ユーザーが入力する情報</h3>
+      <p>本アプリでは、以下の情報をユーザーの端末内にのみ保存します。</p>
+      <ul>
+        <li>収支データ (金額、カテゴリ、日付、メモ、予算設定、固定費・収入等の設定)</li>
+        <li>テーマ、通知、打鍵音などの設定情報</li>
+      </ul>
+      <p>これらの情報は当方のサーバーに送信されることはありません。当方は、ユーザーが入力した個別の支出内容や資産情報を閲覧、利用、または第三者へ提供することは一切ありません。</p>
+
+      <h3>1-2. 広告 SDK により取得される情報</h3>
+      <p>本アプリでは、Google AdMob (Google LLC 提供)
+        をはじめとする第三者広告配信サービスを利用しています。これらの広告サービスは、ユーザーの興味関心に合わせた広告を表示するために、以下の情報を自動的に取得することがあります。</p>
+      <ul>
+        <li>広告識別子 (IDFA / AAID)</li>
+        <li>大まかな位置情報 (国レベル)</li>
+        <li>デバイス情報 (機種、OS バージョン等)</li>
+        <li>広告の表示・クリックに関する情報</li>
+        <li>クラッシュログ、パフォーマンスデータ (アプリの起動時間やフリーズ率等)</li>
+      </ul>
+      <div class="note">
+        ※ PRO プランにおいて広告非表示設定が有効な場合、広告表示は行われませんが、アプリの品質向上のための診断データ等が SDK を通じて送信される場合があります。
+      </div>
+      <p>これらの情報は各広告配信事業者のプライバシーポリシーに基づいて取り扱われます。詳細は下記リンクをご確認ください。</p>
+      <ul>
+        <li>Google 広告のプライバシーポリシー: <a href="https://policies.google.com/privacy" target="_blank"
+            rel="noopener">https://policies.google.com/privacy</a></li>
+      </ul>
+
+      <h3>1-3. 課金情報</h3>
+      <p>PRO プラン等の有料機能をご利用いただく場合、Apple 社 (App Store) または Google 社 (Google Play)
+        を通じてお支払い情報を処理します。当方はクレジットカード番号などのお支払い情報を取得・保存することはありません。</p>
+
+      <h3>1-4. 通知情報</h3>
+      <p>予算超過などの通知機能を有効にした場合、端末のローカル通知機能を使用します。この通知は端末内で完結し、外部に送信されることはありません。</p>
+    </section>
+
+    <section>
+      <h2>2. 情報の利用目的</h2>
+      <p>取得した情報は、以下の目的のために利用します。</p>
+      <ul>
+        <li>本アプリの機能提供 (家計簿の記録、集計、表示)</li>
+        <li>ユーザー体験の向上</li>
+        <li>広告の表示および広告効果の測定</li>
+        <li>サービスの改善および不具合の解消</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>3. 第三者への提供</h2>
+      <p>当方は、法令に定める場合を除き、ユーザーの同意なくして個人情報を第三者に提供することはありません。ただし、以下の場合を除きます。</p>
+      <ul>
+        <li>広告配信事業者 (Google AdMob 等) が広告表示のために自動的に取得する情報</li>
+        <li>法令に基づく開示要請があった場合</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>4. 広告配信について</h2>
+      <p>本アプリでは、収益化のために第三者配信の広告サービスを利用しています。広告事業者は、ユーザーの興味に応じた広告を表示するために Cookie や広告識別子等を使用することがあります。</p>
+      <p>広告のパーソナライズを無効化する方法は、各 OS の設定にてご確認いただけます。</p>
+      <ul>
+        <li>iOS: 「設定」→「プライバシーとセキュリティ」→「Apple 広告」</li>
+        <li>Android: 「設定」→「Google」→「広告」</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>5. データの保存と削除</h2>
+      <ul>
+        <li>本アプリで入力されたデータはお使いの端末内にのみ保存されます。</li>
+        <li>本アプリを削除すると、記録されたすべてのデータも同時に削除されます。</li>
+        <li>データのバックアップおよび復元は行っておりません。データの管理はユーザーご自身の責任で行っていただきますようお願いいたします。</li>
+        <li>機種変更時のデータ移行については、PRO プランにて提供されるエクスポート・インポート機能をご利用ください。</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>6. 未成年のご利用について</h2>
+      <p>本アプリは 13 歳以上を対象としています。13 歳未満の方のご利用はご遠慮ください。</p>
+    </section>
+
+    <section>
+      <h2>7. お子さまのプライバシー保護</h2>
+      <p>当方は、13 歳未満のお子さまから故意に個人情報を収集することはありません。</p>
+    </section>
+
+    <section>
+      <h2>8. プライバシーポリシーの変更</h2>
+      <p>当方は、必要に応じて本ポリシーを変更することがあります。変更後の内容は本ページに掲載した時点で効力を生じるものとします。重要な変更を行う場合は、アプリ内での告知等により、ユーザーへの周知に努めます。</p>
+    </section>
+
+    <section>
+      <h2>9. お問い合わせ</h2>
+      <p>本ポリシーに関するお問い合わせは、以下までご連絡ください。</p>
+      <div class="contact-row">
+        <span class="contact-label">運営者</span>
+        <span class="contact-value">minohi design</span>
+      </div>
+      <div class="contact-row">
+        <span class="contact-label">Eメール</span>
+        <span class="contact-value">minohidesign@gmail.com</span>
+      </div>
+    </section>
+
+    <footer>
+      制定日 2026年7月22日<span class="dot"><!--·</span>最終改訂日 2026年X月X日-->
+    </footer>
+  </div>
+  <script>
+
+    const p = document.getElementById("last-update");
+    p.textContent = lastUpdate;
+  </script>
+</body>
+
+</html>
