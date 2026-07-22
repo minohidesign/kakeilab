@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="KAKEI LAB の特定商取引法に基づく表記">
+  <title>特定商取引法に基づく表記 | KAKEI LAB</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700&display=swap"
+    rel="stylesheet">
+  <style>
+    :root {
+      --bg: #F4F4F7;
+      --card: #FFFFFF;
+      --text: #20202A;
+      --text-sub: #4A4A56;
+      --text-dim: #8A8A96;
+      --border: #EDEDF2;
+      --accent-from: #787c93;
+      --accent-via: #4FD9C4;
+      --accent-to: #7BD63F;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Noto Sans JP', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.75;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 32px 20px 80px;
+    }
+
+    header {
+      text-align: center;
+      padding: 24px 0 32px;
+    }
+
+    .brand {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-weight: 700;
+      letter-spacing: 3px;
+      font-size: 13px;
+      background: linear-gradient(120deg, var(--accent-from), var(--accent-to));
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      display: inline-block;
+    }
+
+    h1 {
+      font-size: 32px;
+      font-weight: 700;
+      margin: 10px 0 6px;
+      letter-spacing: 0.5px;
+    }
+
+    .updated {
+      font-size: 12px;
+      color: var(--text-dim);
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      letter-spacing: 0.3px;
+    }
+
+    .updated > * {
+      font-size: 12px;
+      color: var(--text-dim);
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      letter-spacing: 0.3px;
+    }
+
+    .intro {
+
+      font-size: 16px;
+      color: var(--text-sub);
+      margin-bottom: 40px;
+      line-height: 1.85;
+    }
+
+    section {
+      background: var(--card);
+      border-radius: 16px;
+      padding: 26px 28px;
+      margin-bottom: 14px;
+    }
+
+    h2 {
+      font-size: 24px;
+      font-weight: 700;
+      margin: 0 0 16px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid var(--border);
+      letter-spacing: 0.3px;
+    }
+
+    h3 {
+      font-size: 20px;
+      font-weight: 700;
+      margin: 24px 0 10px;
+      color: var(--text);
+    }
+
+    h3:first-of-type {
+      margin-top: 4px;
+    }
+
+    p,
+    ul,
+    ol {
+      font-size: 16px;
+      color: var(--text-sub);
+      margin: 8px 0;
+      line-height: 1.85;
+    }
+
+    ul,
+    ol {
+      padding-left: 22px;
+    }
+
+    li {
+      margin: 5px 0;
+    }
+
+    .note {
+      font-size: 14px;
+      color: var(--text-sub);
+      background: var(--bg);
+      padding: 12px 16px;
+      margin: 14px 0;
+      border-radius: 8px;
+      line-height: 1.7;
+    }
+
+    a {
+      color: var(--accent-from);
+      text-decoration: none;
+      border-bottom: 1px solid rgba(var(--accent-from), 0.3);
+      transition: border-color 0.2s;
+      word-break: break-all;
+    }
+
+    a:hover {
+      border-bottom-color: var(--accent-from);
+    }
+
+    .contact-row {
+      display: flex;
+      gap: 10px;
+      align-items: baseline;
+      margin: 6px 0;
+      font-size: 16px;
+    }
+
+    .contact-label {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-weight: 700;
+      color: var(--text);
+      min-width: 78px;
+      font-size: 16px;
+      letter-spacing: 0.3px;
+    }
+
+    .contact-value {
+      color: var(--text-sub);
+    }
+
+    .info-row {
+      display: flex;
+      gap: 16px;
+      align-items: baseline;
+      margin: 12px 0;
+      padding: 10px 0;
+      border-bottom: 1px solid var(--border);
+      font-size: 16px;
+    }
+
+    .info-row:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+
+    .info-label {
+      font-weight: 700;
+      color: var(--text);
+      min-width: 180px;
+      font-size: 15px;
+      flex-shrink: 0;
+    }
+
+    .info-value {
+      color: var(--text-sub);
+      flex: 1;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 12px;
+      color: var(--text-dim);
+      margin-top: 40px;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      letter-spacing: 0.4px;
+    }
+
+    footer .dot {
+      opacity: 0.4;
+      margin: 0 8px;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        padding: 20px 14px 60px;
+      }
+
+      .intro {
+        padding: 18px 20px;
+      }
+
+      section {
+        padding: 22px 20px;
+      }
+
+      h1 {
+        font-size: 22px;
+      }
+
+      h2 {
+        font-size: 16px;
+      }
+
+      h3 {
+        font-size: 14px;
+      }
+
+      p,
+      ul,
+      ol,
+      li {
+        font-size: 16px;
+      }
+
+      .contact-row {
+        flex-direction: column;
+        gap: 2px;
+      }
+
+      .contact-label {
+        min-width: 0;
+      }
+
+      .info-row {
+        flex-direction: column;
+        gap: 4px;
+      }
+
+      .info-label {
+        min-width: 0;
+      }
+    }
+  </style>
+  <script>
+    const lastUpdateDate = "2026年7月22日";//最終更新日
+    const lastRevisionDate = "2026年7月22日";//最終改訂日
+  </script>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <h1>特定商取引法に基づく表記</h1>
+      <div class="updated"><p>最終更新日: <span id="last-update"></span></p>
+      </div>
+    </header>
+
+    <div class="intro">
+      本表記は、特定商取引に関する法律第 11 条 (通信販売についての広告) に基づき、KAKEI LAB (以下「本アプリ」といいます) の販売条件等を明示するものです。
+    </div>
+
+    <section>
+      <h2>事業者情報</h2>
+      <div class="info-row">
+        <span class="info-label">販売事業者</span>
+        <span class="info-value">minohi design</span>
+      </div>
+      <div class="info-row">
+        <span class="info-label">運営責任者</span>
+        <span class="info-value">[運営責任者名]</span>
+      </div>
+      <div class="info-row">
+        <span class="info-label">所在地</span>
+        <span class="info-value">請求があれば遅滞なく開示します</span>
+      </div>
+      <div class="info-row">
+        <span class="info-label">電話番号</span>
+        <span class="info-value">請求があれば遅滞なく開示します</span>
+      </div>
+      <div class="info-row">
+        <span class="info-label">メールアドレス</span>
+        <span class="info-value"><a href="mailto:minohidesign@gmail.com">minohidesign@gmail.com</a></span>
+      </div>
+    </section>
+
+    <section>
+      <h2>商品・サービス</h2>
+      <div class="info-row">
+        <span class="info-label">販売価格</span>
+        <span class="info-value">KAKEI LAB PRO プラン: 月額 300 円 (税込)</span>
+      </div>
+      <div class="info-row">
+        <span class="info-label">商品代金以外の必要料金</span>
+        <span class="info-value">本アプリのダウンロードおよび利用に必要な通信料はお客様のご負担となります。</span>
+      </div>
+      <div class="info-row">
+        <span class="info-label">動作環境</span>
+        <span class="info-value">iOS / Android の最新バージョンを推奨します。動作環境を満たしていない場合、正常に動作しない可能性があります。</span>
+      </div>
+    </section>
+
+    <section>
+      <h2>お支払い</h2>
+      <div class="info-row">
+        <span class="info-label">お支払い方法</span>
+        <span class="info-value">Apple 社 (App Store) または Google 社 (Google Play) を通じた各ストアの決済方法に準じます。</span>
+      </div>
+      <div class="info-row">
+        <span class="info-label">お支払い時期</span>
+        <span class="info-value">初回はご購入時にお支払いいただき、以降は自動更新時期に順次お支払いいただきます。</span>
+      </div>
+      <div class="info-row">
+        <span class="info-label">サービス提供時期</span>
+        <span class="info-value">決済完了直後より、PRO プランの機能をご利用いただけます。</span>
+      </div>
+    </section>
+
+    <section>
+      <h2>解約・返金について</h2>
+      <div class="info-row">
+        <span class="info-label">解約方法</span>
+        <span class="info-value">月額プランは自動更新されます。解約をご希望の場合は、Apple / Google 各ストアの設定画面より、更新期限の 24 時間前までに手続きを行ってください。アプリを削除するだけでは解約されません。</span>
+      </div>
+      <div class="info-row">
+        <span class="info-label">返金について</span>
+        <span class="info-value">返金については、Apple / Google 各ストアの返金ポリシーに従います。当方では個別対応を行っておりません。</span>
+      </div>
+      <div class="info-row">
+        <span class="info-label">返品について</span>
+        <span class="info-value">本アプリはデジタルコンテンツであるため、商品の性質上、返品はお受けしておりません。</span>
+      </div>
+    </section>
+
+    <section>
+      <h2>お問い合わせ</h2>
+      <p>本表記に関するお問い合わせは、以下までご連絡ください。</p>
+      <div class="contact-row">
+        <span class="contact-label">運営者</span>
+        <span class="contact-value">minohi design</span>
+      </div>
+      <div class="contact-row">
+        <span class="contact-label">Eメール</span>
+        <span class="contact-value"><a href="mailto:minohidesign@gmail.com">minohidesign@gmail.com</a></span>
+      </div>
+    </section>
+
+    <footer>
+      制定日: 2026年7月22日<span class="dot">·</span>最終改訂日: <span id="last-revision">2026年X月X日</span><br><br>
+      © 2026 minohi design. All rights reserved.
+    </footer>
+  </div>
+  <script>
+
+const lastUpdate = document.getElementById("last-update");
+    const lastRevision = document.getElementById("last-revision");
+    lastUpdate.textContent = lastUpdateDate;
+    lastRevision.textContent = lastRevisionDate;
+  </script>
+</body>
+
+</html>
