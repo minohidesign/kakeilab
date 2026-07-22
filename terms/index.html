@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="KAKEI LAB の利用規約">
+  <title>利用規約 | KAKEI LAB</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700&display=swap"
+    rel="stylesheet">
+  <style>
+    :root {
+      --bg: #F4F4F7;
+      --card: #FFFFFF;
+      --text: #20202A;
+      --text-sub: #4A4A56;
+      --text-dim: #8A8A96;
+      --border: #EDEDF2;
+      --accent-from: #787c93;
+      --accent-via: #4FD9C4;
+      --accent-to: #7BD63F;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Noto Sans JP', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.75;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 32px 20px 80px;
+    }
+
+    header {
+      text-align: center;
+      padding: 24px 0 32px;
+    }
+
+    .brand {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-weight: 700;
+      letter-spacing: 3px;
+      font-size: 13px;
+      background: linear-gradient(120deg, var(--accent-from), var(--accent-to));
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      display: inline-block;
+    }
+
+    h1 {
+      font-size: 32px;
+      font-weight: 700;
+      margin: 10px 0 6px;
+      letter-spacing: 0.5px;
+    }
+
+    .updated {
+      font-size: 12px;
+      color: var(--text-dim);
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      letter-spacing: 0.3px;
+    }
+
+    .updated>* {
+      font-size: 12px;
+      color: var(--text-dim);
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      letter-spacing: 0.3px;
+    }
+
+    .intro {
+
+      font-size: 16px;
+      color: var(--text-sub);
+      margin-bottom: 40px;
+      line-height: 1.85;
+    }
+
+    section {
+      background: var(--card);
+      border-radius: 16px;
+      padding: 26px 28px;
+      margin-bottom: 14px;
+    }
+
+    h2 {
+      font-size: 24px;
+      font-weight: 700;
+      margin: 0 0 16px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid var(--border);
+      letter-spacing: 0.3px;
+    }
+
+    h3 {
+      font-size: 20px;
+      font-weight: 700;
+      margin: 24px 0 10px;
+      color: var(--text);
+    }
+
+    h3:first-of-type {
+      margin-top: 4px;
+    }
+
+    p,
+    ul,
+    ol {
+      font-size: 16px;
+      color: var(--text-sub);
+      margin: 8px 0;
+      line-height: 1.85;
+    }
+
+    ul,
+    ol {
+      padding-left: 22px;
+    }
+
+    li {
+      margin: 5px 0;
+    }
+
+    .note {
+      font-size: 14px;
+      color: var(--text-sub);
+      background: var(--bg);
+      padding: 12px 16px;
+      margin: 14px 0;
+      border-radius: 8px;
+      line-height: 1.7;
+    }
+
+    a {
+      color: var(--accent-from);
+      text-decoration: none;
+      border-bottom: 1px solid rgba(var(--accent-from), 0.3);
+      transition: border-color 0.2s;
+      word-break: break-all;
+    }
+
+    a:hover {
+      border-bottom-color: var(--accent-from);
+    }
+
+    .contact-row {
+      display: flex;
+      gap: 10px;
+      align-items: baseline;
+      margin: 6px 0;
+      font-size: 16px;
+    }
+
+    .contact-label {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-weight: 700;
+      color: var(--text);
+      min-width: 78px;
+      font-size: 16px;
+      letter-spacing: 0.3px;
+    }
+
+    .contact-value {
+      color: var(--text-sub);
+    }
+
+    footer {
+      text-align: center;
+      font-size: 12px;
+      color: var(--text-dim);
+      margin-top: 40px;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      letter-spacing: 0.4px;
+    }
+
+    footer .dot {
+      opacity: 0.4;
+      margin: 0 8px;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        padding: 20px 14px 60px;
+      }
+
+      .intro {
+        padding: 18px 20px;
+      }
+
+      section {
+        padding: 22px 20px;
+      }
+
+      h1 {
+        font-size: 22px;
+      }
+
+      h2 {
+        font-size: 16px;
+      }
+
+      h3 {
+        font-size: 14px;
+      }
+
+      p,
+      ul,
+      ol,
+      li {
+        font-size: 16px;
+      }
+
+      .contact-row {
+        flex-direction: column;
+        gap: 2px;
+      }
+
+      .contact-label {
+        min-width: 0;
+      }
+    }
+  </style>
+  <script>
+    const lastUpdateDate = "2026年7月22日";//最終更新日
+    const lastRevisionDate = "2026年7月22日";//最終改訂日
+  </script>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <h1>利用規約</h1>
+      <div class="updated">
+        <p>最終更新日: <span id="last-update"></span></p>
+      </div>
+    </header>
+
+    <div class="intro">
+      本利用規約 (以下「本規約」といいます) は、KAKEI LAB (以下「本アプリ」といいます) の運営者 (以下「当方」といいます) が提供するサービスの利用条件を定めるものです。ユーザー (以下「ユーザー」といいます)
+      は本規約に同意した上で本アプリをご利用ください。
+    </div>
+
+    <section>
+      <h2>第1条 (適用)</h2>
+      <ol>
+        <li>本規約は、本アプリの提供およびユーザーによる本アプリの利用に関する一切の関係に適用されます。</li>
+        <li>ユーザーは、本アプリをダウンロードまたは利用することにより、本規約に同意したものとみなします。</li>
+        <li>当方は、ユーザーの個人情報を別途定めるプライバシーポリシーに従って適切に取り扱います。</li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>第2条 (アカウント)</h2>
+      <ol>
+        <li>本アプリは、ユーザー登録を必要とせずにご利用いただけます。</li>
+        <li>すべての設定およびデータはユーザーの端末内に保存されます。</li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>第3条 (サービス内容)</h2>
+      <ol>
+        <li>本アプリは、収支の記録、予算管理、集計・分析などの家計簿機能を提供します。</li>
+        <li>当方は、ユーザーへの事前の通知なく、本アプリの内容を変更、追加、または削除することがあります。</li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>第4条 (有料機能 / PRO プラン)</h2>
+      <ol>
+        <li>本アプリの一部機能は、有料プラン (以下「PRO プラン」といいます) の購入により利用可能となります。</li>
+        <li>PRO プランのお支払いは、Apple 社 (App Store) または Google 社 (Google Play) を通じて行われます。</li>
+        <li>課金の詳細および解約手続きについては、Apple / Google の各ストアの規定に従うものとします。</li>
+        <li>支払い済み料金の返金については、各ストアの返金ポリシーに従います。当方は個別対応を行いません。</li>
+        <li>月額プランは自動更新されます。解約を希望する場合は、各ストアの設定画面より更新期限の 24 時間前までに手続きを行う必要があります。アプリを削除しただけでは解約されません。</li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>第5条 (禁止事項)</h2>
+      <p>ユーザーは、本アプリの利用にあたり、以下の行為を行ってはなりません。</p>
+      <ol>
+        <li>法令または公序良俗に違反する行為</li>
+        <li>犯罪行為に関連する行為</li>
+        <li>本アプリの動作を妨害する行為</li>
+        <li>本アプリのリバースエンジニアリング、逆コンパイル、逆アセンブル</li>
+        <li>不正な手段を用いて有料機能を利用しようとする行為</li>
+        <li>他のユーザーまたは第三者の権利を侵害する行為</li>
+        <li>当方または第三者になりすます行為</li>
+        <li>その他、当方が不適切と判断する行為</li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>第6条 (免責事項)</h2>
+      <ol>
+        <li>当方は、本アプリに事実上または法律上の瑕疵 (安全性、正確性、有用性、完全性等) がないことを保証するものではありません。</li>
+        <li>当方の過失 (重過失を除きます) によりユーザーに生じた損害の賠償は、当該ユーザーが本アプリの有料機能に関して当方に支払った直近 1 ヶ月分の利用料金 (買い切りの場合は購入代金) を上限とします。</li>
+        <li>本アプリはユーザーの端末内にデータを保存する仕様のため、アプリの削除、端末の故障、データの消失等については当方は責任を負いません。ユーザーご自身の責任でデータの管理をお願いいたします。</li>
+        <li>本アプリをアンインストールした場合、端末内に保存されたデータは直ちに消去され、復元することはできません。</li>
+        <li>本アプリは家計管理のための補助ツールであり、税務・法務・投資等の助言を目的とするものではありません。重要な意思決定については、専門家にご相談ください。</li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>第7条 (広告)</h2>
+      <p>本アプリでは、第三者配信の広告サービスを利用しており、ユーザーの端末に広告が表示されることがあります。広告の内容および広告主に関する責任は各広告事業者に帰属します。</p>
+    </section>
+
+    <section>
+      <h2>第8条 (知的財産権)</h2>
+      <p>本アプリおよびその関連するすべてのコンテンツに関する著作権、商標権その他の知的財産権は、当方または正当な権利者に帰属します。ユーザーは、当方の許諾なく、本アプリまたはそのコンテンツを複製、転載、改変等することはできません。
+      </p>
+    </section>
+
+    <section>
+      <h2>第9条 (サービスの中断・終了)</h2>
+      <ol>
+        <li>当方は、以下の場合にはユーザーへの事前通知なく、本アプリの提供を停止または中断することができるものとします。
+          <ul>
+            <li>本アプリのメンテナンスを行う場合</li>
+            <li>地震、落雷、火災、停電、天災地変等の不可抗力により本アプリの提供が困難となった場合</li>
+            <li>その他、当方が本アプリの提供が困難と判断した場合</li>
+          </ul>
+        </li>
+        <li>当方は、本アプリの提供を終了することがあります。この場合、事前にアプリ内での告知等により、ユーザーに周知するよう努めます。</li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>第10条 (規約の変更)</h2>
+      <ol>
+        <li>当方は、必要に応じて本規約を変更することがあります。</li>
+        <li>変更後の規約は、本アプリまたは Web ページに掲載した時点で効力を生じるものとします。</li>
+        <li>重要な変更を行う場合は、アプリ内での告知等により、ユーザーへの周知に努めます。</li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>第11条 (準拠法および管轄裁判所)</h2>
+      <ol>
+        <li>本規約の解釈にあたっては、日本法を準拠法とします。</li>
+        <li>本アプリに関して紛争が生じた場合、当方の所在地を管轄する裁判所を第一審の専属的合意管轄裁判所とします。</li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>第12条 (お問い合わせ)</h2>
+      <p>本規約に関するお問い合わせは、以下までご連絡ください。</p>
+      <div class="contact-row">
+        <span class="contact-label">運営者</span>
+        <span class="contact-value">minohi design</span>
+      </div>
+      <div class="contact-row">
+        <span class="contact-label">Eメール</span>
+        <span class="contact-value">minohidesign@gmail.com</span>
+      </div>
+    </section>
+
+    <footer>
+      制定日: 2026年7月22日<span class="dot">·</span>最終改訂日: <span id="last-revision">2026年X月X日</span><br><br>
+      © 2026 minohi design. All rights reserved.
+    </footer>
+  </div>
+  <script>
+
+    const lastUpdate = document.getElementById("last-update");
+    const lastRevision = document.getElementById("last-revision");
+    lastUpdate.textContent = lastUpdateDate;
+    lastRevision.textContent = lastRevisionDate;
+  </script>
+</body>
+
+</html>
