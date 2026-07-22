@@ -237,7 +237,8 @@
     }
   </style>
   <script>
-    const lastUpdate = "2026年7月22日";
+    const lastUpdateDate = "2026年7月22日";//最終更新日
+    const lastRevisionDate = "2026年7月22日";//最終改訂日
   </script>
 </head>
 
@@ -361,13 +362,16 @@
     </section>
 
     <footer>
-      制定日: 2026年7月22日<span class="dot"><!--·</span>最終改訂日 2026年X月X日-->
+      制定日: 2026年7月22日<span class="dot">·</span>最終改訂日: <span id="last-revision">2026年X月X日</span><br><br>
+      © 2026 minohi design. All rights reserved.
     </footer>
   </div>
   <script>
 
-    const p = document.getElementById("last-update");
-    p.textContent = lastUpdate;
+    const lastUpdate = document.getElementById("last-update");
+    const lastRevision = document.getElementById("last-revision");
+    lastUpdate.textContent = lastUpdateDate;
+    lastRevision.textContent = lastRevisionDate;
   </script>
 </body>
 
